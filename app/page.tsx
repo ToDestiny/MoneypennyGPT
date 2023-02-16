@@ -5,5 +5,9 @@ import styles from './page.module.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function HomePage() {
-  return <main className={styles.main}></main>;
+  return (
+    <main className={styles.main}>
+      <h1>MoneypennyGPT</h1>
+    </main>
+  );
 }

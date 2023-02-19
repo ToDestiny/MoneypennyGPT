@@ -1,5 +1,5 @@
-import SideBar from '@/components/SideBar';
-import './globals.css';
+import SideBar from "@/components/SideBar";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -15,7 +15,9 @@ export default function RootLayout({
       <head />
       <body>
         <div className="flex">
-          <SideBar />
+          <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem] ">
+            <SideBar />
+          </div>
           {/* Client provider - Notifications  */}
           <div className="bg-[#343541] flex-1">{children}</div>
         </div>

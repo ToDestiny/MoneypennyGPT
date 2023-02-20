@@ -6,6 +6,10 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { db } from "@/firebase";
 
+type Props = {
+  id: string;
+};
+
 function NewChat() {
   const router = useRouter();
   const { data: session } = useSession();

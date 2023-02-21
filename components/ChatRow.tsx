@@ -18,17 +18,14 @@ function ChatRow({ id }: Props) {
   const [active, setActive] = useState(false);
 
   const [messages] = useCollection(
-    query(
-      collection(db, "users", session?.user?.email!, "chats", id, "messages"),
-      orderBy("createdAt", "asc")
-    )
+    collection(db, "users", session?.user?.email!, "chats", id, "messages")
   );
 
   useEffect(() => {
     if (!pathname) return;
 
     setActive(pathname.includes(id));
-  }, [pathname]);
+  }, [id, pathname]);
 
   return (
     <Link

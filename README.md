@@ -1,38 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![picture](band.jpeg)
 
-## Getting Started
+# MoneyPennyGPT-ChatGPT Clone
 
-First, run the development server:
+Reproduction of ChatGPT.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This project was bootstrapped with [Next JS](https://beta.nextjs.org/docs).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Anthony COLAS
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Technologies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [![React-v_18.2](https://img.shields.io/badge/React-v_18.2-blue)](https://fr.reactjs.org/)
+- [![React-Router-v_6.4](https://img.shields.io/badge/React_Router-v_6.4-blue)](https://reactrouter.com/docs/en/v6)
+- [![Styled-Components-v_5.3.5](https://img.shields.io/badge/Styled_Components-v_5.3.5-orange)](https://styled-components.com/)
+- [![Recharts-v_2.1.14](https://img.shields.io/badge/Recharts-v_2.1.9-yellow)](https://recharts.org/)
+- [![D3-v_7.6.1](https://img.shields.io/badge/D3-v_7.6.1-yellow)](https://d3js.org/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Preview
 
-## Learn More
+![picture](preview.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+App made for 1024x780px resolution.
 
-## Deploy on Vercel
+- npm
+- yarn
+- Node.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### How to install?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Install the backend
+
+Clone the backend repository of SportSee
+`https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard`
+
+Go inside the installed repository and install dependencies:
+`yarn install`
+
+Launch the backend on port 3000 (by default):
+`yarn dev`
+
+#### Install the frontend
+
+Clone the frontend repository of SportSee
+`https://github.com/ToDestiny/SportSee---Analytics-Dashboard-with-React`
+
+Go inside the app repository
+`cd sportsee-front`
+
+Install dependencies:
+`npm install`
+
+Launch the backend on port 3000 (by default):
+`npm run start`
+
+#### Accessing the website
+
+Frontend is now rendered at URL `http://localhost:3000/user/12`
+
+#### Mocked Data or API
+
+In order to change between the two modes, you need to change the variable:
+`const isMockedData = false;`
+
+Located inside src/api/api/js l11
+
+By default is it false.

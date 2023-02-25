@@ -1,5 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { adminDb } from "@/firebaseAdmin";
 import query from "@/lib/queryApi";
+import admin from "firebase-admin";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
@@ -23,11 +25,25 @@ export default async function handler(
   }
 
   // ChatGPT Query
-  const responde = await query(prompt, chatId, model);
+  const response = await query(prompt, chatId, model);
 
   const message: Message = {
     text: response || "MoneypennyGPT was unable to find an answer for that!",
+    createAt: admin.firestore.Timestamp.now(),
+    user: {
+      _id: "MoneypennyGPT",
+      name: "MoneypennyGPT",
+      avatar: "https://links.papareact.com/89k",
+    },
   };
+
+  await adminDb
+    .collection("users")
+    .doc(session?.user?.email)
+    .collection("chats")
+    .doc(chatId)
+    .collection("messages")
+    .add(message);
 
   res.status(200).json({ name: "John Doe" });
 }

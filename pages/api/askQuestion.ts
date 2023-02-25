@@ -28,11 +28,11 @@ export default async function handler(
   const response = await query(prompt, chatId, model);
 
   const message: Message = {
-    text: response || "MoneypennyGPT was unable to find an answer for that!",
+    text: response || "MoneyPennyGPT was unable to find an answer for that!",
     createAt: admin.firestore.Timestamp.now(),
     user: {
-      _id: "MoneypennyGPT",
-      name: "MoneypennyGPT",
+      _id: "MoneyPennyGPT",
+      name: "MoneyPennyGPT",
       avatar: "https://links.papareact.com/89k",
     },
   };
@@ -45,5 +45,5 @@ export default async function handler(
     .collection("messages")
     .add(message);
 
-  res.status(200).json({ name: "John Doe" });
+  res.status(200).json({ answer: message.text });
 }

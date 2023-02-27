@@ -3,6 +3,7 @@
 # MoneyPennyGPT-ChatGPT Clone
 
 Reproduction of ChatGPT.
+Later will evolve into something bigger.
 
 This project was bootstrapped with [Next JS](https://beta.nextjs.org/docs).
 

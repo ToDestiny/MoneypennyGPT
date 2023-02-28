@@ -5,6 +5,7 @@ import { collection, orderBy, query } from "firebase/firestore";
 import { useSession, signOut } from "next-auth/react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import ChatRow from "./ChatRow";
+import ModelSelection from "./ModelSelection";
 import NewChat from "./NewChat";
 
 function SideBar() {
@@ -24,7 +25,9 @@ function SideBar() {
         <div className="w-full">
           <NewChat />
 
-          <div>{/* Model Selection */}</div>
+          <div className="hidden sm:inline">
+            <ModelSelection />
+          </div>
 
           {/* Map through the Ch at Rows */}
           {chats?.docs.map((chat) => (

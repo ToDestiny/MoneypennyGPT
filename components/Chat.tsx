@@ -23,14 +23,16 @@ function Chat({ chatId }: Props) {
           session?.user?.email!,
           "chats",
           chatId,
-          messages
+          "messages"
         ),
         orderBy("createdAt", "asc")
       )
   );
   return (
     <div className="flex-1">
-      <Message key={messages.id} message={messages.data()} />
+      {messages?.docs.map((message) => (
+        <Message key={message.id} message={message.data()} />
+      ))}
     </div>
   );
 }

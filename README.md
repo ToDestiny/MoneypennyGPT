@@ -21,13 +21,11 @@ Anthony COLAS
 
 ## Preview
 
-![picture](preview.png)
+![picture](moneygpt-screen.png)
 
 ## Installation
 
 ### Prerequisites
-
-App made for 1024x780px resolution.
 
 - npm
 - yarn

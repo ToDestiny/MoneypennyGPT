@@ -13,11 +13,10 @@ Anthony COLAS
 
 ## Technologies
 
-- [![React-v_18.2](https://img.shields.io/badge/React-v_18.2-blue)](https://fr.reactjs.org/)
-- [![React-Router-v_6.4](https://img.shields.io/badge/React_Router-v_6.4-blue)](https://reactrouter.com/docs/en/v6)
-- [![Styled-Components-v_5.3.5](https://img.shields.io/badge/Styled_Components-v_5.3.5-orange)](https://styled-components.com/)
-- [![Recharts-v_2.1.14](https://img.shields.io/badge/Recharts-v_2.1.9-yellow)](https://recharts.org/)
-- [![D3-v_7.6.1](https://img.shields.io/badge/D3-v_7.6.1-yellow)](https://d3js.org/)
+- [![TypeScript-v_4.9.5](https://img.shields.io/badge/typescript-4.9.5-blue)](https://www.typescriptlang.org/docs/)
+- [![Next.js-v_13.1.6](https://img.shields.io/badge/next.js-13.1.6-orange)](https://nextjs.org/docs)
+- [![Firebase-v_9.17.1](https://img.shields.io/badge/firebase-9.17.1-yellow)](https://firebase.google.com/docs?hl=fr)
+- [![Openai-v_3.1.0](https://img.shields.io/badge/openai-3.1.0-green)](https://platform.openai.com/docs/introduction)
 
 ## Preview
 
@@ -33,40 +32,19 @@ Anthony COLAS
 
 ### How to install?
 
-#### Install the backend
+#### Install via yarn / npm
 
-Clone the backend repository of SportSee
-`https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard`
+Clone the backend repository of MoneypennyGPT
+`https://github.com/ToDestiny/MoneypennyGPT`
 
 Go inside the installed repository and install dependencies:
-`yarn install`
+`yarn install` or `npm install`
 
 Launch the backend on port 3000 (by default):
-`yarn dev`
-
-#### Install the frontend
-
-Clone the frontend repository of SportSee
-`https://github.com/ToDestiny/SportSee---Analytics-Dashboard-with-React`
-
-Go inside the app repository
-`cd sportsee-front`
-
-Install dependencies:
-`npm install`
-
-Launch the backend on port 3000 (by default):
-`npm run start`
+`yarn run dev` or `npm run dev`
 
 #### Accessing the website
 
-Frontend is now rendered at URL `http://localhost:3000/user/12`
+Frontend is now rendered at URL `http://localhost:3000/`
 
-#### Mocked Data or API
-
-In order to change between the two modes, you need to change the variable:
-`const isMockedData = false;`
-
-Located inside src/api/api/js l11
-
-By default is it false.
+You can find a production version on vercel: `https://moneypenny-gpt.vercel.app/`

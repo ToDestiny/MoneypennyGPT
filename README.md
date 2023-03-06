@@ -1,5 +1,3 @@
-![picture](band.jpeg)
-
 # MoneyPennyGPT-ChatGPT Clone
 
 Reproduction of ChatGPT.

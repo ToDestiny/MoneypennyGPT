@@ -46,3 +46,5 @@ Launch the backend on port 3000 (by default):
 Frontend is now rendered at URL `http://localhost:3000/`
 
 You can find a production version on vercel: `https://moneypenny-gpt.vercel.app/`
+
+If you need information, you can reach me via GitHub.
